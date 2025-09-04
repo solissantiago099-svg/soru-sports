@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soru Sports</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../mi-proyecto-soru-sports/css/styles.css">
+</head>
+<body>
+<!--NAVBAR-->
+<header class="sticky-top" >
+    <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+        <a class="navbar-brand" href="#">SP</a>
+        <button class="navbar-toggler text-bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+<!-- Menú central -->
+        <ul class="navbar-nav nav-center gap-lg-3 my-2 my-lg-0">
+            <li class="nav-item"><a class="nav-link" href="./pages/Formula-1.html">Fórmula 1</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/Tenis.html">Tenis</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/futbol.html">Fútbol</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pages/padel.html">Pádel</a></li>
+        </ul>
+<!-- Enlace derecha -->
+        <ul class="navbar-nav ms-lg-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+</header>
+
+<main class="container my-4">
+    <div class="row g-3 hero-row">
+<!-- Principal -->
+    <div class="col-lg-8">
+        <a href="./pages/Formula-1.html#nota-colapinto">
+        <div class="rounded-overlay">
+        <div class="ratio ratio-fixed">
+            <img class="hero-cover" src="./assets/img/Colapinto-Zandvoort-800x445.jpg" alt="noticia Principal">
+        </div>
+        <div class="overlay-dark d-flex align-items-end p-3 text-white">
+            <div>
+            <h2 class="h4 mt-2">Colapinto y su mejor fin de semana en Alpine</h2>
+            <p class="mb-0 small">El piloto argentino que largo P16 tuvo una gran carrera y cruzo la meta P11 al borde de los puntos</p>
+            </div>
+        </div>
+        </div>
+        </a>
+    </div>
+
+<!-- Secundarios -->
+        <div class="col-lg-4 hero-right-grid">
+        <a href="./pages/futbol.html#nota-boca-aldosivi" class="text-decoration-none">
+            <article class="rounded overflow-hidden position-relative h-100">
+            <div class="ratio ratio-fixed h-100">
+                <img src="./assets/img/boca aldosivi" alt="Boca-Aldosivi" class="hero-cover">
+            </div>
+            <div class="overlay-dark"></div>
+            <div class="position-absolute bottom-0 start-0 end-0 p-2 text-white">
+                <h3 class="h6 mb-0">Boca vencio 2 a 0 a Aldosivi</h3>
+            </div>
+            </article>
+        </a>
+
+        <a href="./pages/Tenis.html#nota-sinner" class="text-decoration-none">
+            <article class="rounded overflow-hidden position-relative h-100">
+            <div class="ratio ratio-fixed h-100">
+                <img src="./assets/img/sinnet.jpeg" alt="Sinner" class="hero-cover">
+            </div>
+            <div class="overlay-dark"></div>
+            <div class="position-absolute bottom-0 start-0 end-0 p-2 text-white">
+                <h3 class="h6 mb-0">Sinner avanza en el US Open</h3>
+            </div>
+            </article>
+        </a>
+        </div>
+    </div>
+
+
+<!-- GRID principal + Sidebar -->
+    <div class="row g-4 mt-1">
+    <div class="col-lg-8">
+<!-- Bloque categoría: F1 -->
+    <div class="d-flex align-items-center justify-content-between mb-2 mt-3">
+        <h3 class="h5 mb-0">Fórmula 1</h3>
+        <a href="./pages/Formula-1.html" class="link-primary fw-semibold">Ver más</a>
+    </div>
+    <div class="row g-3">
+        <div class="col-md-4">
+            <a href="./pages/Formula-1.html#nota-ferrari-clasi" class="text-decoration-none">
+            <article class="card h-100">
+            <img class="card-img-top" src="./assets/img/ferrari.jpg" alt="ferrari">
+            <div class="card-body">
+                <h4 class="card-title h6">Ferrari sorprende en clasificación</h4>
+            </div>
+            </article>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="./pages/Formula-1.html#nota-aleron" class="text-decoration-none">
+            <article class="card h-100">
+            <img class="card-img-top" src="./assets/img/mercedes aleron.jpg" alt="mercedes aleron">
+            <div class="card-body">
+                <h4 class="card-title h6">Mercedes prueba nuevo alerón</h4>
+            </div>
+            </article>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="./pages/Formula-1.html#nota-monza" class="text-decoration-none">
+            <article class="card h-100">
+            <img class="card-img-top" src="./assets/img/monza.avif" alt="monza">
+            <div class="card-body">
+                <h4 class="card-title h6">Se viene Monza</h4>
+            </div>
+            </article>
+            </a>
+        </div>
+    </div>
+
+<!-- Bloque categoría: Fútbol -->
+    <div class="d-flex align-items-center justify-content-between mb-2 mt-4">
+        <h3 class="h5 mb-0">Fútbol</h3>
+        <a href="./pages/futbol.html" class="link-primary fw-semibold">Ver más</a>
+    </div>
+    <div class="row g-3">
+        <div class="col-md-4">
+            <a href="./pages/futbol.html#nota-bayer-equi" class="text-decoration-none">
+            <article class="card h-100">
+            <img class="card-img-top" src="./assets/img/equi.jpg" alt="equi">
+            <div class="card-body">
+                <h4 class="card-title h6">Bayer Leverkusen ficha a Equi Fenandez</h4>
+            </div>
+            </article>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="./pages/futbol.html#nota-river-san-martin" class="text-decoration-none">
+            <article class="card h-100">
+                <img class="card-img-top" src="./assets/img/riber.jpg" alt="riber">
+            <div class="card-body">
+                <h4 class="card-title h6">River se impuso frente San Martin de San Juan</h4>
+            </div>
+            </article>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="./pages/futbol.html#nota-incidentes-avellaneda" class="text-decoration-none">
+            <article class="card h-100">
+                <img class="card-img-top" src="./assets/img/independiente.jpeg" alt="independiente">
+            <div class="card-body">
+                <h4 class="card-title h6">Ultimas noticias sobre el incidente en avellaneda</h4>
+            </div>
+            </article>
+            </a>
+        </div>
+    </div>
+    </div>
+
+<!-- Sidebar -->
+    <aside class="col-lg-4">
+    <div class="card mb-3">
+        <div class="card-body">
+            <h4 class="h6">Tendencias</h4>
+            <ul class="list-unstyled mb-0">
+            <li><a href="./pages/padel.html#nota-1" class="link-dark">Coello y Tapia</a></li>
+            <li><a href="./pages/Formula-1.html#nota-lando" class="link-dark">Norris y Piastri</a></li>
+            <li><a href="./pages/futbol.html#nota-franco-mastantuono-real-madrid" class="link-dark">Mastantuono</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="h6">Newsletter</h4>
+            <p class="small text-muted">Recibí lo mejor del día.</p>
+            <div class="input-group">
+            <input type="email" class="form-control" placeholder="Tu email">
+            <button class="btn btn-primary">Suscribirme</button>
+        </div>
+        </div>
+    </div>
+    </aside>
+    </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="py-4 mt-4">
+    <div class="container text-center">
+        <small>© 2025 Soru Sports</small>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+</body>
+</html>
