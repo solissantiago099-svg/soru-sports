@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+@mixin breakpoint-lg {
+    @media (min-width: 992px) { @content; }
+}
+
+@mixin hero-img($h: 100%) {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    width: 100%;
+    height: $h;
+}
+
+

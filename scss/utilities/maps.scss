@@ -1,0 +1,12 @@
+$colors: (
+    brand-bg: rgba(5, 0, 68, .92),
+    brand-accent: rgb(251, 255, 10),
+    text: #111,
+    text-muted: #6c757d,
+    white: #fff,
+    shadow: rgba(0,0,0,.12)
+);
+
+@function color($key) {
+    @return map-get($colors, $key);
+}

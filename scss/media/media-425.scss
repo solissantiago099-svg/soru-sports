@@ -1,0 +1,6 @@
+@use "../utilities/variables" as *;
+
+@media (max-width: 425px) {
+    .card-img-top { height: 140px; }
+    .mini-card .card-img-top { height: 130px; }
+}

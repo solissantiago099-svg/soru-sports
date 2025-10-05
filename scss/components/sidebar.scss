@@ -1,0 +1,22 @@
+/* ================= Sidebar ================= */
+.sidebar-card {
+    .table {
+    font-size: .95rem;
+    margin-bottom: 0;
+
+    thead th {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: #fff;
+    }
+    }
+
+    h5 { font-size: 1rem; margin-bottom: .75rem; }
+}
+
+.sidebar-scroll {
+    overflow: auto;
+    border-radius: .5rem;
+    max-height: 420px;
+}

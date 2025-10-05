@@ -1,0 +1,7 @@
+@use "../utilities/variables" as *;
+
+@media (max-width: 320px) {
+    .card-img-top { height: 130px; }
+    .navbar .nav-link { font-size: 0.85rem; }
+}
+

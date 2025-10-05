@@ -1,0 +1,63 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+/* ================= Hero (principal + secundarias) ================= */
+:root {
+    --hero-gap: #{$hero-gap};
+    --hero-height: #{$hero-height};
+}
+
+.hero-row { align-items: stretch; animation: fadeUp .5s ease both; }
+
+/* Noticia destacada */
+.rounded-overlay {
+    overflow: hidden;
+    height: var(--hero-height);
+    border-radius: $radius-md;
+    position: relative;
+
+    > img {
+    border-radius: inherit;
+    display: block;
+    }
+}
+
+.hero-left-ratio { height: 100%; }
+.ratio-fixed     { --bs-aspect-ratio: 0; height: 100%; }
+
+/* Noticias secundarias */
+.hero-right-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--hero-gap);
+    height: var(--hero-height);
+}
+
+/* Imágenes del hero */
+.hero-right-grid .ratio > img,
+.hero-left-ratio > img,
+.hero-right-grid .ratio .hero-cover,
+.hero-left-ratio .hero-cover {
+    @include hero-img(100%);
+}
+
+/* Overlay oscuro + zoom */
+.overlay-dark {
+    position: absolute;
+    inset: 0;
+    background: $overlay-gradient;
+    border-radius: inherit;
+    pointer-events: none;
+    transition: background .3s ease;
+}
+
+.rounded-overlay .hero-cover,
+.hero-right-grid .hero-cover { transition: transform .4s ease; }
+
+.rounded-overlay:hover .hero-cover,
+.hero-right-grid .ratio:hover .hero-cover { transform: scale(1.03); }
+
+.rounded-overlay:hover .overlay-dark,
+.position-relative:hover .overlay-dark {
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, .60));
+}

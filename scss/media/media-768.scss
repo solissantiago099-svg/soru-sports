@@ -1,0 +1,6 @@
+@use "../utilities/variables" as *;
+
+@media (max-width: 768px) {
+    .hero-row { flex-direction: column; }
+    .hero-right-grid { height: auto; }
+}

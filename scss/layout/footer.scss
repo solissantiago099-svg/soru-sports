@@ -1,0 +1,7 @@
+@use "../utilities/variables" as *;
+
+footer {
+    background: $brand-bg;
+    color: $brand-accent;
+    font-size: .9rem;
+}
